@@ -1,7 +1,7 @@
 {
   "name": "liquid-fire-ios",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "iOS Style LiquidFire Transitions.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,9 +11,9 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/runspired/liquid-fire-ios.git",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4.1.1"
   },
   "author": "",
   "license": "MIT",
@@ -30,11 +30,12 @@
     "ember-cli-qunit": "^1.0.4",
     "ember-cli-release": "0.2.8",
     "ember-cli-sri": "^1.1.0",
+    "ember-cli-toolbelts": "0.2.5",
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "1.13.15",
+    "ember-disable-prototype-extensions": "^1.0.0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
-    "ember-disable-prototype-extensions": "^1.0.0",
     "ember-try": "~0.0.8"
   },
   "keywords": [
