@@ -1,26 +1,65 @@
-# Liquid-fire-ios
+Liquid Fire iOS [![npm version](https://badge.fury.io/js/liquid-fire-ios.svg)](http://badge.fury.io/js/liquid-fire-ios)
+=================
 
-This README outlines the details of collaborating on this Ember addon.
+[![Build Status](https://travis-ci.org/runspired/liquid-fire-ios.svg?branch=master)](https://travis-ci.org/runspired/liquid-fire-ios)
+[![Ember Observer Score](http://emberobserver.com/badges/liquid-fire-ios.svg)](http://emberobserver.com/addons/liquid-fire-ios)
 
-## Installation
+Liquid-fire-ios provides additional transitions that are similar to the transitions found in native iOS
+applications.
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+## Support, Questions, Collaboration
 
-## Running
+Join the [liquid-fire](https://embercommunity.slack.com/messages/liquid-fire/) channel on Slack.
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+[![Slack Status](https://ember-community-slackin.herokuapp.com/badge.svg)](https://ember-community-slackin.herokuapp.com/)
 
-## Running Tests
+### Status
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+[Changelog](./CHANGELOG.md)
 
-## Building
+[![dependencies](https://david-dm.org/runspired/liquid-fire-ios.svg)](https://david-dm.org/runspired/liquid-fire-ios)
+[![devDependency Status](https://david-dm.org/runspired/liquid-fire-ios/dev-status.svg)](https://david-dm.org/runspired/liquid-fire-ios#info=devDependencies)
 
-* `ember build`
+## Usage
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+`ember install liquid-fire-ios`
+
+This will run the default blueprint which additionally installs `liquid-fire`.
+
+### Defining a Transition
+
+```js
+export default function() {
+  this.transition(
+    this.use('exit-right', { duration: 200 }),
+    this.reverse('exit-left', { duration: 200 })
+  );
+}
+```
+
+
+## Contributing
+
+Contributions are very welcome.
+
+When making a PR try to use the following conventions:
+
+**Commit Messages:**
+
+`type(shortname): action based description`
+
+Examples:
+
+- chore(deps): bump deps in package.json and bower.json
+- docs(component): document the `fast-action` component
+
+**Branch Naming:**
+
+`type/short-description`
+
+Examples:
+
+- chore/bump-deps
+- docs/fast-action-component
+
+
