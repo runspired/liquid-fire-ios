@@ -13,7 +13,7 @@
   },
   "repository": "https://github.com/runspired/liquid-fire-ios.git",
   "engines": {
-    "node": ">= 4.1.1"
+    "node": ">= 4.2.4"
   },
   "author": "",
   "license": "MIT",
