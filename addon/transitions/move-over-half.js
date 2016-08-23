@@ -8,6 +8,7 @@ export default function moveOverHalf(dimension, direction, opts) {
   var firstStep;
   var property;
   var measure;
+  var elementToOverlay;
 
   var darkOpacity = 0.75;
   if (direction > 0) {
@@ -15,15 +16,17 @@ export default function moveOverHalf(dimension, direction, opts) {
     overlayParams = {
       opacity: [0, darkOpacity]
     };
+    elementToOverlay = this.newElement;
   } else {
     // moving left
     overlayParams = {
       opacity: [darkOpacity, 0]
     };
+    elementToOverlay = this.oldElement;
   }
 
   var overlay = jQuery('<div class="transition-overlay"></div>');
-  this.oldElement.append(overlay);
+  elementToOverlay.append(overlay);
 
   if (dimension.toLowerCase() === 'x') {
     property = 'translateX';
@@ -53,7 +56,7 @@ export default function moveOverHalf(dimension, direction, opts) {
       animate(overlay, overlayParams, opts),
       animate(this.oldElement, oldParams, opts),
       animate(this.newElement, newParams, opts, 'moving-in')
-    ]);
+    ]).then(() => overlay.remove());
   });
 }
 
