@@ -3,15 +3,14 @@ Liquid Fire iOS [![npm version](https://badge.fury.io/js/liquid-fire-ios.svg)](h
 
 [![Build Status](https://travis-ci.org/runspired/liquid-fire-ios.svg?branch=master)](https://travis-ci.org/runspired/liquid-fire-ios)
 [![Ember Observer Score](http://emberobserver.com/badges/liquid-fire-ios.svg)](http://emberobserver.com/addons/liquid-fire-ios)
+[![Discord](https://img.shields.io/discord/480462759797063690.svg?logo=discord)](https://discord.gg/zT3asNS)
 
 Liquid-fire-ios provides additional transitions that are similar to the transitions found in native iOS
 applications.
 
 ## Support, Questions, Collaboration
 
-Join the [liquid-fire](https://embercommunity.slack.com/messages/liquid-fire/) channel on Slack.
-
-[![Slack Status](https://ember-community-slackin.herokuapp.com/badge.svg)](https://ember-community-slackin.herokuapp.com/)
+Join the Ember Community on [Discord](https://discord.gg/zT3asNS)
 
 ### Status
 
